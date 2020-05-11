@@ -1,6 +1,8 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text, Button } from '@tarojs/components'
 import './index.scss'
+import Welcome from '../../Comopent/Welcome'
+import Click from '../../Comopent/Click'
 
 export default class Index extends Component {
 
@@ -43,6 +45,8 @@ export default class Index extends Component {
           <Text>{this.state.test}</Text>
           <Button onClick={this.onClick}>click me</Button>
         </View>
+        <Welcome name='json snow'></Welcome>
+        <Click></Click>
       </View>
     )
   }

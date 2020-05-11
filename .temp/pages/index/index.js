@@ -2,6 +2,8 @@ import Nerv from "nervjs";
 import Taro from "@tarojs/taro-h5";
 import { View, Text, Button } from '@tarojs/components';
 import './index.scss';
+import Welcome from '../../Comopent/Welcome';
+import Click from '../../Comopent/Click';
 export default class Index extends Taro.Component {
   constructor(props) {
     super(props);
@@ -20,6 +22,8 @@ export default class Index extends Taro.Component {
           <Text>{this.state.test}</Text>
           <Button onClick={this.onClick}>click me</Button>
         </View>
+        <Welcome name="json snow"></Welcome>
+        <Click></Click>
       </View>;
   }
   onClick = e => {
